@@ -22,4 +22,8 @@ public class ElementUtility {
 		getElement(locator).click();
 		
 	}
+	public boolean verifyIsDisplayed(By locator) {
+		return getElement(locator).isDisplayed();
+		
+	} 
 }

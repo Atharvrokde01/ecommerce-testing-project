@@ -31,12 +31,26 @@ public class BrowserUtility {
 	public void websiteAddress(String url) {
 		driver.navigate().to(url);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-		
 		}
 
 	public void deleteBrowserCoockies() {
 		driver.manage().deleteAllCookies();
+		
+	}
+	public void closeBrowser() {
+		driver.quit();
+		
+	}
+	public void backPage() {
+		driver.navigate().back();
+		
+	}
+	public void refreshPage() {
+		driver.navigate().refresh();
+		
+	}
+	public void minimizePage() {
+		driver.manage().window().minimize();
 		
 	}
 
